@@ -14,12 +14,18 @@
             padding: 10px;
             background-color: #eee;
         }
+        li {
+            margin-bottom: 30px;
+            list-style: none;
+        }
     </style>
 </head>
 <body>
     <h1>GitHub Bookmarklet</h1>
-    <a href='javascript:$javascript'>🚀 Load &amp; Expand Conversations</a>
+    <p>To install the following bookmarklets, just drag and drop them to the bookmark bar in your web browser:</p>
+    <ul>
+        <li><a href='javascript:$load_js'>🚀 Conversation | Load &amp; Expand Conversations</a></li>
+        <li><a href='javascript:$show_js'>🔥 Files Changed | Show Conversations</a></li>
+    </ul>
 </body>
 </html>
-
-

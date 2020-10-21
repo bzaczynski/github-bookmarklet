@@ -1,37 +1,48 @@
-import string
+"""
+Generate an HTML page with bookmarklets to drag and drop.
+
+Usage:
+$ python build.py
+"""
+
+from pathlib import Path
+from string import Template
 import webbrowser
 
 import requests
 
+
+BOOKMARKLETS = Path("bookmarklets/")
+TEMPLATE = Path("templates/index.t")
 INDEX = "index.html"
-JAVASCRIPT = "bookmarklet.js"
-TEMPLATE = "index.template"
 
 
 def main() -> None:
-    save(INDEX, render(JAVASCRIPT, TEMPLATE))
+    """Script entry point."""
+    template = Template(TEMPLATE.read_text(encoding="utf-8"))
+    save(INDEX, template.substitute(dict(bookmarklets())))
     webbrowser.open(INDEX)
 
 
-def save(filename: str, content: str) -> None:
-    with open(filename, mode="w", encoding="utf-8") as fp:
-        print(content, file=fp)
-
-
-def read(filename: str) -> str:
-    with open(filename, mode="r", encoding="utf-8") as fp:
-        return fp.read()
+def bookmarklets(parent_dir: Path = BOOKMARKLETS):
+    """Return a generator of bookmarklets by name."""
+    for path in Path(parent_dir).iterdir():
+        name = path.name.replace(".", "_")
+        content = minify(path.read_text(encoding="utf-8"))
+        yield name, content
 
 
 def minify(javascript: str) -> str:
+    """Return a minified JavaScript code."""
     url = "https://javascript-minifier.com/raw"
     return requests.post(url, {"input": javascript}).text
 
 
-def render(input_filename: str, template_filename: str) -> str:
-    template = string.Template(read(template_filename))
-    return template.substitute(javascript=minify(read(input_filename)))
+def save(filename: str, content: str) -> None:
+    """Write the given content to a specified file."""
+    with open(filename, mode="w", encoding="utf-8") as file_object:
+        print(content, file=file_object)
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     main()

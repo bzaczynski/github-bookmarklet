@@ -232,6 +232,7 @@ dmypy.json
 
 ### vscode ###
 .history/
+.vscode/
 .vscode/*
 !.vscode/settings.json
 !.vscode/tasks.json

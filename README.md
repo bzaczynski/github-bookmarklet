@@ -20,8 +20,8 @@ $ python build.py
 
 ## Installation
 
-Drag and drop the bookmarklet to the bookmark bar.
+Drag and drop the bookmarklets to the bookmark bar in your web browser.
 
 ## Usage
 
-Navigate to the Conversation tab in an open pull request and click the bookmarklet.
+Navigate to the Conversation or the Files tab in an open pull request and click one of the bookmarklets.
