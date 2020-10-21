@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>GitHub Bookmarklet</title>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap" rel="stylesheet">
+    <style>
+        * {
+            font-family: 'Source Sans Pro', sans-serif;
+        }
+        a {
+            text-decoration: none;
+            border: solid 1px black;
+            padding: 10px;
+            background-color: #eee;
+        }
+    </style>
+</head>
+<body>
+    <h1>GitHub Bookmarklet</h1>
+    <a href='javascript:!function(){(function(){const t=document.createElement("div");t.innerText="⌛ Loading...",t.id="text",t.style.position="absolute",t.style.top="50%",t.style.left="50%",t.style.fontSize="50px",t.style.color="white",t.style.transform="translate(-50%,-50%)";const e=document.createElement("div");e.appendChild(t),e.id="overlay",e.style.position="fixed",e.style.display="block",e.style.width="100%",e.style.height="100%",e.style.top="0",e.style.left="0",e.style.right="0",e.style.bottom="0",e.style.backgroundColor="rgba(0, 0, 0, 0.75)",e.style.zIndex="999",document.body.appendChild(e)}(),new Promise((t,e)=>{const n=window.fetch;function o(){const e=document.querySelector(".ajax-pagination-btn:not([disabled])");null!==e?e.click():(window.fetch=n,function(){const t=document.getElementById("overlay");t&&t.parentElement.removeChild(t)}(),t())}!function(t,e,o){window.fetch=function(l,i){const c=n.apply(this,arguments);if(l.match(e)){const e=i&&i.method||"get";t.toLowerCase()===e&&c.then(o)}return c}}("get",/.*\/more_threads.*/,o),o()})).then(function(){document.querySelectorAll("details:not([open]).js-comment-container span.Details-content--closed").forEach(t=>t.click())})}();'>🚀 Load &amp; Expand Conversations</a>
+</body>
+</html>
+
+
+
