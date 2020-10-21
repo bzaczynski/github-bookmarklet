@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>GitHub Bookmarklet</title>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap" rel="stylesheet">
+    <style>
+        * {
+            font-family: 'Source Sans Pro', sans-serif;
+        }
+        a {
+            text-decoration: none;
+            border: solid 1px black;
+            padding: 10px;
+            background-color: #eee;
+        }
+    </style>
+</head>
+<body>
+    <h1>GitHub Bookmarklet</h1>
+    <a href='javascript:$javascript'>🚀 Load &amp; Expand Conversations</a>
+</body>
+</html>
+
+
