@@ -6,6 +6,10 @@ A collection of [bookmarklets](https://en.wikipedia.org/wiki/Bookmarklet) to aut
 
 My reviews tend to grow into hundreds of comments, which GitHub doesn't handle very well because it isn't a common scenario. To avoid missing some remarks that could be buried under a bunch of _Load More..._ sections, I needed a way to extend GitHub's functionality so that they would load all with one click. Another missing piece was a toggle button for expanding and collapsing resolved or outdated conversations.
 
+## How Does It Work?
+
+These bookmarklets are snippets of unobtrusive JavaScript code, which use CSS selectors to manipulate the current page's DOM and monkey-patch the browser's Fetch API to intercept HTTP traffic.
+
 ## Installation
 
 Navigate to the [index page](https://bzaczynski.github.io/github-bookmarklet/) and then drag and drop the bookmarklets to the bookmark bar in your web browser.
@@ -31,7 +35,3 @@ Render an HTML file with the bookmarklet and open it in your default web browser
 ```shell
 $ python build.py
 ```
-
-## How Does It Work?
-
-These bookmarklets are snippets of unobtrusive JavaScript code, which use CSS selectors to manipulate the current page's DOM and monkey-patch the browser's Fetch API to intercept HTTP traffic.
