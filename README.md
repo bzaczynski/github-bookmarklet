@@ -12,7 +12,7 @@ These bookmarklets are snippets of unobtrusive JavaScript code, which use CSS se
 
 ## Installation
 
-Navigate to the [index page](https://bzaczynski.github.io/github-bookmarklet/) and then drag and drop the bookmarklets to the bookmark bar in your web browser.
+Navigate to the [index page](https://bzaczynski.github.io/github-bookmarklet/) hosted on GitHub Pages and then drag and drop the bookmarklets to the bookmark bar in your web browser.
 
 ## Usage
 
