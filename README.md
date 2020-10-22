@@ -2,6 +2,18 @@
 
 A collection of [bookmarklets](https://en.wikipedia.org/wiki/Bookmarklet) to automate everyday tasks during a review of GitHub pull requests.
 
+## Why?
+
+My reviews tend to grow into hundreds of comments, which GitHub doesn't handle very with well because it isn't a common scenario. To avoid missing some comments that could be buried under a bunch of "Load More..." sections, I needed a way to extend GitHub's functionality so that they would load all with one click. Another missing piece are the toggle buttons to expand and collapse resolved or outdated conversations.
+
+## Installation
+
+Navigate to the [index page](https://bzaczynski.github.io/github-bookmarklet/) and then drag and drop the bookmarklets to the bookmark bar in your web browser.
+
+## Usage
+
+Click one of the bookmarklets on the Conversation or the Files tab in an open pull request.
+
 ## Building
 
 Create and activate a virtual environment and install dependencies into it:
@@ -17,11 +29,3 @@ Render an HTML file with the bookmarklet and open it in your default web browser
 ```shell
 $ python build.py
 ```
-
-## Installation
-
-Drag and drop the bookmarklets to the bookmark bar in your web browser.
-
-## Usage
-
-Navigate to the Conversation or the Files tab in an open pull request and click one of the bookmarklets.
