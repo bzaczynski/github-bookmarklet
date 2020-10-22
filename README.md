@@ -14,6 +14,8 @@ Navigate to the [index page](https://bzaczynski.github.io/github-bookmarklet/) a
 
 Click one of the bookmarklets on the Conversation or the Files tab in an open pull request.
 
+![Loading More Conversation Threads](docs/demo.gif)
+
 ## Building
 
 Create and activate a virtual environment and install dependencies into it:
