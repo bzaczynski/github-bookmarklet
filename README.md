@@ -31,3 +31,7 @@ Render an HTML file with the bookmarklet and open it in your default web browser
 ```shell
 $ python build.py
 ```
+
+## How Does It Work?
+
+These bookmarklets are snippets of unobtrusive JavaScript code, which use CSS selectors to manipulate the current page's DOM and monkey-patch the browser's Fetch API to intercept HTTP traffic.
