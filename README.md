@@ -14,7 +14,7 @@ Navigate to the [index page](https://bzaczynski.github.io/github-bookmarklet/) a
 
 Click one of the bookmarklets on the Conversation or the Files tab in an open pull request.
 
-<img alt="Loading More Conversation Threads" src="https://raw.githubusercontent.com/bzaczynski/github-bookmarklet/master/docs/demo.gif" width="200">
+<img alt="Loading More Conversation Threads" src="https://raw.githubusercontent.com/bzaczynski/github-bookmarklet/master/docs/demo.gif" width="400">
 
 ## Building
 
