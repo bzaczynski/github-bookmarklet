@@ -4,7 +4,7 @@ A collection of [bookmarklets](https://en.wikipedia.org/wiki/Bookmarklet) to aut
 
 ## Why?
 
-My reviews tend to grow into hundreds of comments, which GitHub doesn't handle very with well because it isn't a common scenario. To avoid missing some comments that could be buried under a bunch of "Load More..." sections, I needed a way to extend GitHub's functionality so that they would load all with one click. Another missing piece are the toggle buttons to expand and collapse resolved or outdated conversations.
+My reviews tend to grow into hundreds of comments, which GitHub doesn't handle very well because it isn't a common scenario. To avoid missing some remarks that could be buried under a bunch of _Load More..._ sections, I needed a way to extend GitHub's functionality so that they would load all with one click. Another missing piece was a toggle button for expanding and collapsing resolved or outdated conversations.
 
 ## Installation
 
